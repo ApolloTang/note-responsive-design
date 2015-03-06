@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title></title>
+    <title>002a-</title>
     <link href="lib/css/bootstrap.css" rel="stylesheet">
     <style>
         .red {outline:1px red solid;}
@@ -18,31 +18,32 @@
 
 <body>
     <div class="container" style="margin-left: 0">
-        <p>
-            <span class="visible-lg-inline">current device type: lg (large) </span>
-            <span class="visible-md-inline">current device type: md (medium)</span>
-            <span class="visible-sm-inline">current device type: sm (small)</span>
-            <span class="visible-xs-inline">current device type: xs (extra small)</span>
-        </p>
+        <div class="row" >
+                <p>
+                    <span class="visible-lg-inline">current device type: lg (large) </span>
+                    <span class="visible-md-inline">current device type: md (medium)</span>
+                    <span class="visible-sm-inline">current device type: sm (small)</span>
+                    <span class="visible-xs-inline">current device type: xs (extra small)</span>
+                </p>
 
-        <p>
-            <span class="visible-lg-inline">current device dimension : 1200 &lt;= device width</span>
-            <span class="visible-md-inline">current device dimension : 992 &lt;= device width &lt;= 1200 </span>
-            <span class="visible-sm-inline">current device dimension : 768 &lt;= device width &lt;= 992  </span>
-            <span class="visible-xs-inline">current device dimension : device width &lt;= 768 </span>
-        </p>
-
+                <p>
+                    <span class="visible-lg-inline">current device dimension : 1200 &lt;= device width</span>
+                    <span class="visible-md-inline">current device dimension : 992 &lt;= device width &lt;= 1200 </span>
+                    <span class="visible-sm-inline">current device dimension : 768 &lt;= device width &lt;= 992  </span>
+                    <span class="visible-xs-inline">current device dimension : device width &lt;= 768 </span>
+                </p>
+        </div>
         <hr>
 
         <p> will stack for extra small device</p>
         <p> will NOT stack for small device</p>
-        <p> column width ratio for small device :  | 2/12 | 4/12 | 6/12 </p>
+        <p> column width ratio for small device :  | 4/12 | 4/12 | 4/12 </p>
         <p> column width ratio for medium device :  | 4/12 | 4/12 | 4/12 </p>
 
         <div class="row" >
-            <div class="col-sm-2 col-md-4 red  ">col-sm-2 col-md-4</div>
+            <div class="col-sm-4 col-md-4 red  ">col-sm-4 col-md-4</div>
             <div class="col-sm-4 col-md-4 green">col-sm-4 col-md-4</div>
-            <div class="col-sm-6 col-md-4 blue ">col-sm-6 col-md-4</div>
+            <div class="col-sm-4 col-md-4 blue ">col-sm-4 col-md-4</div>
         </div>
 
         <hr>
@@ -58,9 +59,9 @@
 
         <p> will stack for extra small device</p>
         <div class="row" >
-            <div class="col-sm-2 red  ">col-sm-2</div>
+            <div class="col-sm-4 red  ">col-sm-4</div>
             <div class="col-sm-4 green">col-sm-4</div>
-            <div class="col-sm-6 blue ">col-sm-6</div>
+            <div class="col-sm-4 blue ">col-sm-4</div>
         </div>
 
         <hr>

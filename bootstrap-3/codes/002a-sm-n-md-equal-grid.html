@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>002a sm & md eq grid</title>
+    <link href="lib/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .red {outline:1px red solid;}
+        .blue {outline:1px blue solid;}
+        .green {outline:1px green solid;}
+
+    </style>
+
+  </head>
+
+<body>
+    <div class="container" style="margin-left: 0">
+        <div class="row" >
+                <p>
+                    <span class="visible-lg-inline">current device type: lg (large) </span>
+                    <span class="visible-md-inline">current device type: md (medium)</span>
+                    <span class="visible-sm-inline">current device type: sm (small)</span>
+                    <span class="visible-xs-inline">current device type: xs (extra small)</span>
+                </p>
+
+                <p>
+                    <span class="visible-lg-inline">current device dimension : 1200 &lt;= device width</span>
+                    <span class="visible-md-inline">current device dimension : 992 &lt;= device width &lt;= 1200 </span>
+                    <span class="visible-sm-inline">current device dimension : 768 &lt;= device width &lt;= 992  </span>
+                    <span class="visible-xs-inline">current device dimension : device width &lt;= 768 </span>
+                </p>
+        </div>
+        <hr>
+
+
+        <div class="row" >
+            <div class="col-sm-4 col-md-4 red  ">col-sm-4 col-md-4</div>
+            <div class="col-sm-4 col-md-4 green">col-sm-4 col-md-4</div>
+            <div class="col-sm-4 col-md-4 blue ">col-sm-4 col-md-4</div>
+        </div>
+
+        <hr>
+
+        <p>mixing sm and md at equal grid, greater divice (md) is ignored, so you only need to specify the smallest device</p>
+
+        <div class="row" >
+            <div class="col-sm-4 red  ">col-sm-4</div>
+            <div class="col-sm-4 green">col-sm-4</div>
+            <div class="col-sm-4 blue ">col-sm-4</div>
+        </div>
+
+        <hr>
+
+        <p> </p>
+        <div class="row" >
+            <div class="col-md-4 red  ">col-md-4</div>
+            <div class="col-md-4 green">col-md-4</div>
+            <div class="col-md-4 blue ">col-md-4</div>
+        </div>
+
+
+
+        <hr>
+
+    </div>
+    <!-- /container -->
+  </body>
+</html>

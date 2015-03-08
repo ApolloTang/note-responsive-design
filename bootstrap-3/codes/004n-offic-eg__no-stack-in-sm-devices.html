@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>003a</title>
+    <link href="lib/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .red {outline:1px red solid;}
+        .blue {outline:1px blue solid;}
+        .green {outline:1px green solid;}
+
+    </style>
+
+  </head>
+
+<body>
+    <div class="container" style="margin-left: 0">
+        <div class="row">
+            <p>
+                <span class="visible-lg-inline">current device type: lg (large) </span>
+                <span class="visible-md-inline">current device type: md (medium)</span>
+                <span class="visible-sm-inline">current device type: sm (small)</span>
+                <span class="visible-xs-inline">current device type: xs (extra small)</span>
+            </p>
+
+            <p>
+                <span class="visible-lg-inline">current device dimension : 1200 &lt;= device width</span>
+                <span class="visible-md-inline">current device dimension : 992 &lt;= device width &lt;= 1200 </span>
+                <span class="visible-sm-inline">current device dimension : 768 &lt;= device width &lt;= 992  </span>
+                <span class="visible-xs-inline">current device dimension : device width &lt;= 768 </span>
+            </p>
+        </div>
+
+        <hr>
+
+        <b>
+            Example from getbootstrap.com: <br>
+            Mobile and desktop Example:
+        </b>
+
+        <p>Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding .col-xs-* .col-md-* to your columns. See the example below for a better idea of how it all works.  </p>
+
+        <hr>
+
+        <p>Stack the columns on mobile by making one full-width and the other half-width </p>
+        <div class="row">
+          <div class="col-xs-12 col-md-8 red ">.col-xs-12 .col-md-8</div>
+          <div class="col-xs-6 col-md-4  green">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <hr>
+
+
+        <p>Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop </p>
+        <div class="row">
+          <div class="col-xs-6 col-md-4 red">.col-xs-6 .col-md-4</div>
+          <div class="col-xs-6 col-md-4 green">.col-xs-6 .col-md-4</div>
+          <div class="col-xs-6 col-md-4 blue">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <hr>
+
+        <p> Columns are always 50% wide, on mobile and desktop </p>
+        <div class="row">
+          <div class="col-xs-6 red">.col-xs-6</div>
+          <div class="col-xs-6 green">.col-xs-6</div>
+        </div>
+
+        <hr>
+
+        <p></p>
+        <div class="row">
+          <div class="col-xs-6 red">  .col-xs-6 </div>
+          <div class="col-xs-6 green">.col-xs-6 </div>
+          <div class="col-xs-6 blue"> .col-xs-6 </div>
+        </div>
+
+        <hr>
+
+
+        <p>description required</p>
+        <div class="row">
+          <div class="col-md-8 red ">  .col-md-8</div>
+          <div class="col-md-4  green">.col-md-4</div>
+        </div>
+
+        <hr>
+
+        <p>text</p>
+        <div class="row">
+          <div class="col-xs-12 red "> .col-xs-12 </div>
+          <div class="col-xs-6  green">.col-xs-6  </div>
+        </div>
+
+
+        <hr>
+    </div>
+    <!-- /container -->
+  </body>
+</html>
